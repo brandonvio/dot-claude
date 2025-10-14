@@ -1,0 +1,29 @@
+# Credentials and secrets
+.credentials.json
+*.key
+*.pem
+*.env
+
+# Local data and history
+history.jsonl
+file-history/
+shell-snapshots/
+debug/
+
+# Personal settings and state
+ide/
+plugins/
+todos/
+
+# Project-specific data (should be in project repos, not user config)
+projects/
+
+# Analytics and telemetry
+statsig/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
