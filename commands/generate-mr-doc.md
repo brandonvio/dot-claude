@@ -16,6 +16,7 @@ Steps:
 2. Ensure we're not on main branch (safety check)
 3. Create docs/merge-request-summaries directory if it doesn't exist
 4. Get commit differences between branch and main
+   - Get changes to all files that have not yet been commited
 5. Analyze file changes and generate statistics
 6. Create comprehensive merge request documentation with:
    - Executive summary of changes

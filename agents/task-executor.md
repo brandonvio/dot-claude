@@ -2,6 +2,7 @@
 name: task-executor
 description: Execute work from task files in a controlled, section-by-section manner with user confirmation at each step. Use when you need to systematically work through tasks with quality controls and user oversight.
 tools: Read, Write, Edit, MultiEdit, Bash, Grep, Glob
+model: us.anthropic.claude-sonnet-4-5-20250929-v1:0
 ---
 
 # Task Executor Agent

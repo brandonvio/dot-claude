@@ -3,7 +3,6 @@
     "allow": [
       "Bash(find:*)",
       "Bash(rm:*)",
-      "Bash(python -m pytest*",
       "Bash(python:*)",
       "Bash(tree:*)",
       "Bash(cat:*)",
@@ -15,7 +14,6 @@
       "Bash(make:*)",
       "Bash(sed:*)",
       "Bash(black:*)",
-      "Bash(export AWS_REGION=\"us-east-1\")",
       "Bash(find:*)"
     ],
     "deny": [],
