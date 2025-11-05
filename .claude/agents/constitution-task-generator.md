@@ -33,7 +33,7 @@ Before generating any tasks, ALWAYS:
   3. **Comprehensive Type Safety** (type hints everywhere)
   4. **Structured Data Models** (Pydantic/dataclasses, never loose dicts)
   5. **Unit Testing with Mocking** (use appropriate mocking strategies)
-  6. **Dependency Injection** (constructor injection pattern)
+  6. **Dependency Injection** (all dependencies REQUIRED, no Optional, no defaults, never create in constructors)
   7. **SOLID Principles** (all five principles strictly applied)
 - Review development standards and governance rules
 
@@ -50,7 +50,7 @@ For each requirement, assess:
 - **Fail Fast**: Are there requirements for fallback logic or defensive programming?
 - **Type Safety**: Will this require proper type hints throughout?
 - **Data Models**: Are structured models needed instead of dictionaries?
-- **Dependency Injection**: Will services need injectable dependencies?
+- **Dependency Injection**: Will services need injectable dependencies (all REQUIRED, no Optional, no defaults)?
 - **SOLID Principles**: Does this violate any SOLID principle?
 - **Testing**: Can this be unit tested with moto mocking?
 
@@ -181,8 +181,9 @@ Generate a comprehensive markdown file with the following structure:
 
 ### Dependency Injection Checklist
 - [ ] All services use constructor injection
-- [ ] All dependencies are optional parameters
+- [ ] All dependencies are REQUIRED parameters (no Optional, no defaults)
 - [ ] Dependencies have proper type hints
+- [ ] Dependencies are NEVER created inside constructors
 - [ ] Services are loosely coupled
 - [ ] Enables easy mock injection for testing
 
