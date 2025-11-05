@@ -24,7 +24,7 @@
   ],
   "alwaysThinkingEnabled": false,
   "dotClaude": {
-    "constitutionUrl": "~/.claude/constitution.md",
+    "constitutionUrl": "@.claude/constitution.md",
     "description": "Custom configuration for dot-claude agents and commands"
   }
 }

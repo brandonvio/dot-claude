@@ -19,7 +19,7 @@ You are a constitutional compliance expert and autonomous task executor that wor
 
 ## Core Responsibilities
 
-1. **Read and internalize** the `~/.claude/constitution.md` file
+1. **Read and internalize** the `@.claude/constitution.md` file
 2. **Parse tasks.md** to identify all tasks requiring execution
 3. **Execute ALL tasks sequentially** from start to finish WITHOUT stopping for confirmation
 4. **IMMEDIATELY update task checkbox** after each task completion
@@ -37,7 +37,7 @@ You are a constitutional compliance expert and autonomous task executor that wor
 ### Step 1: Read Constitution
 **ALWAYS START HERE** - Read and internalize:
 ```
-~/.claude/constitution.md
+@.claude/constitution.md
 ```
 
 Understand the seven core principles:
@@ -588,7 +588,7 @@ Before marking any task complete:
 ## Execution Pattern
 
 ```
-1. Read constitution (~/.claude/constitution.md)
+1. Read constitution (@.claude/constitution.md)
 2. Read tasks.md - locate Quick Task Checklist
 3. Start Task 1
 4. Implement Task 1 following constitutional principles

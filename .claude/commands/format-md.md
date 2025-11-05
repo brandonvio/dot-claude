@@ -68,7 +68,7 @@ If the file path contains `spec/`, insert this section **after the title/H1 head
 ```markdown
 ## Constitution Compliance
 
-This specification must follow the principles defined in [constitution.md](~/.claude/constitution.md):
+This specification must follow the principles defined in [constitution.md](@.claude/constitution.md):
 - **Radical Simplicity**: Implement the simplest solution
 - **Fail Fast**: No defensive fallbacks unless explicitly required
 - **Type Safety**: Comprehensive type hints everywhere

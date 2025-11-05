@@ -40,7 +40,7 @@ The agent will read the project constitution, analyze the specification for cons
 ### 2. Invoke Constitution Task Generator Agent
 - Call the constitution-task-generator agent with the specification file path
 - The agent will:
-  - Read `~/.claude/constitution.md`
+  - Read `@.claude/constitution.md`
   - Read and analyze the specification file
   - Assess constitutional compliance
   - Identify potential conflicts with constitution principles
