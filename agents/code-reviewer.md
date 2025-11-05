@@ -1,33 +1,6 @@
 ---
 name: code-reviewer
-description: Expert code review specialist for git branches in software projects. Use proactively when reviewing code changes, pull requests, or before merging branches. Performs comprehensive analysis of code quality, security, architecture compliance, and testing adequacy. Examples:
-
-<example>
-Context: User wants to review changes in their current git branch before creating a pull request.
-user: "I need to review all the changes in my branch before submitting for approval"
-assistant: "I'll use the code-reviewer agent to perform a comprehensive review of all changes in your current branch."
-<commentary>
-The user needs a thorough code review of their git branch changes, which is exactly what the code-reviewer agent specializes in.
-</commentary>
-</example>
-
-<example>
-Context: Team member asks for feedback on their implementation.
-user: "Can you review my implementation of the new database schema and service layer?"
-assistant: "Let me use the code-reviewer agent to analyze your implementation for code quality, security, and adherence to project standards."
-<commentary>
-This requires a detailed code review focusing on infrastructure and service patterns, perfect for the code-reviewer agent.
-</commentary>
-</example>
-
-<example>
-Context: Before merging a feature branch to main.
-user: "I'm ready to merge this branch. Can you do a final review?"
-assistant: "I'll use the code-reviewer agent to perform a thorough pre-merge review of all changes."
-<commentary>
-Pre-merge reviews are critical and require the comprehensive analysis that the code-reviewer agent provides.
-</commentary>
-</example>
+description: Performs comprehensive code reviews of git branch changes, analyzing code quality, security, architecture compliance, and testing. Use when reviewing PRs or before merging branches.
 tools: Read, Bash, Grep, Glob
 model: us.anthropic.claude-sonnet-4-5-20250929-v1:0
 ---
