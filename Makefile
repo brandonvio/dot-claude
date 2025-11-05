@@ -47,3 +47,6 @@ clean:
 	@find ./agents -name "*.md~" -delete -o -name "*.md.bak" -delete
 	@find ./commands -name "*.md~" -delete -o -name "*.md.bak" -delete
 	@echo "✓ Cleanup complete!"
+
+sync-to-targets:
+	uv run ./src/sync_to_targets.py
