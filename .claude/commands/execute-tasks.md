@@ -94,7 +94,7 @@ Execute ALL tasks from the file: $1
 **PRIMARY MANDATE: Execute ALL tasks from start to finish WITHOUT stopping for user confirmation. Work autonomously through the entire task list.**
 
 1. **Read Constitution and Tasks File:**
-   - First, read .claude/constitiution.md
+   - First, read @.claude/constitution.md
    - Load tasks from $1
    - Locate the Quick Task Checklist at the top
    - Understand all tasks to be executed

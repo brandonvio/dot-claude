@@ -1,0 +1,3 @@
+/Users/brandon/code/spikes/claude-agent-spike-1/.claude
+/Users/brandon/code/projects/lvrgd/lvrgd-common/.claude
+/Users/brandon/code/projects/agentic-rag-platform/.claude

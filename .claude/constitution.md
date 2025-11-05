@@ -40,11 +40,12 @@ Use appropriate mocking strategies in unit tests to ensure the system will work 
 ### VI. Dependency Injection (NON-NEGOTIABLE)
 **All services must use dependency injection for their dependencies.**
 - Constructor injection is the primary pattern - inject dependencies through `__init__`
-- All dependencies must be optional parameters with type hints
+- **ALL dependencies are REQUIRED parameters** - no Optional, no default values
+- **NEVER create dependencies inside constructors** - all dependencies must be passed in from outside
 - Enable testability by allowing mock injection
-- Default to None and instantiate internally only if not provided
 - Make services loosely coupled and independently testable
-- Example pattern: `def __init__(self, dependency: Optional[DependencyType] = None)`
+- Constructor should fail if valid dependencies are not provided (fail fast)
+- Example pattern: `def __init__(self, dependency: DependencyType)` - no Optional, no defaults
 
 ### VII. SOLID Principles (NON-NEGOTIABLE)
 **Strictly adhere to all SOLID principles in system design.**
@@ -62,7 +63,7 @@ Use appropriate mocking strategies in unit tests to ensure the system will work 
 - All code must follow the radical simplicity principle
 - Type hints are mandatory - no exceptions
 - Structured data models required for all data collections
-- Dependency injection required for all services
+- Dependency injection required for all services - all dependencies REQUIRED (no Optional, no defaults), never created in constructors
 - SOLID principles must be followed in all design decisions
 - No defensive programming unless explicitly requested
 - Let systems fail fast and fail hard
@@ -88,7 +89,9 @@ Use appropriate mocking strategies in unit tests to ensure the system will work 
 - Any violation of simplicity, type safety, fail-fast, dependency injection, or SOLID principles must be rejected
 - Complexity increases must be explicitly justified and approved
 - When in doubt, choose the simpler solution
-- Services without dependency injection must be refactored
+- Services without proper dependency injection must be refactored
+- Services that create dependencies inside constructors must be refactored
+- Services with Optional dependencies or default parameter values must be refactored
 - SOLID violations indicate architectural debt and must be addressed
 
-**Version**: 3.0.0 | **Ratified**: 2025-01-17 | **Last Amended**: 2025-10-27
+**Version**: 3.1.0 | **Ratified**: 2025-01-17 | **Last Amended**: 2025-11-05
