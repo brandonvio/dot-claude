@@ -49,6 +49,9 @@ def main() -> None:
     for target in targets:
         print(f"\n=== Syncing to {target} ===")
 
+        # Create target directory if it doesn't exist
+        target.mkdir(parents=True, exist_ok=True)
+
         sync_file(constitution, target)
         sync_directory(agents_dir, target)
         sync_directory(commands_dir, target)
