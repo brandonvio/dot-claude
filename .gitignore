@@ -5,7 +5,7 @@
 *.env
 
 # Local data and history
-history.jsonl
+# history.jsonl
 file-history/
 shell-snapshots/
 debug/

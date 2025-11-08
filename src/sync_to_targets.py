@@ -40,6 +40,7 @@ def main() -> None:
 
     targets_file = project_root / "targets.txt"
     constitution = claude_dir / "constitution.md"
+    settings = claude_dir / "settings.json"
     agents_dir = claude_dir / "agents"
     commands_dir = claude_dir / "commands"
     scripts_dir = claude_dir / "scripts"
@@ -53,6 +54,7 @@ def main() -> None:
         target.mkdir(parents=True, exist_ok=True)
 
         sync_file(constitution, target)
+        sync_file(settings, target)
         sync_directory(agents_dir, target)
         sync_directory(commands_dir, target)
         sync_directory(scripts_dir, target)
