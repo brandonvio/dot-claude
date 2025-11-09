@@ -14,6 +14,7 @@
       "Bash(python3 -m pytest:*)",
       "Bash(uv run pytest:*)",
       "Bash(gh:*)",
+      "Bash(uv:*)",
       "Bash(test:*)"
     ],
     "deny": [],
